@@ -1,201 +1,235 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Mercedes - Auto disponibili</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      .car-card {
-        margin-bottom: 30px;
-      }
+        .car-card {
+            margin-bottom: 30px;
+        }
 
-      .car-img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 8px;
-      }
+        .car-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="bg-dark text-white text-center py-4">
-      <h1>Auto Mercedes-Benz Disponibili</h1>
-      <p>
-        <a href="index.html" class="text-light">← Torna alla Home</a>
-      </p>
+        <h1>Auto Mercedes-Benz Disponibili</h1>
+        <p>
+            <a href="index.html" class="text-light">← Torna alla Home</a>
+        </p>
     </header>
     <main class="container py-5">
-      <div class="row">
-        <!-- Auto 1: Classe A -->
-        <div class="col-md-6 car-card">
-          <div class="card">
-            <div id="carouselClasseA" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="classea.jpg" class="d-block w-100 car-img" alt="Classe A vista 1">
+        <div class="row">
+            <!-- Auto 1: Classe A -->
+            <div class="col-md-6 car-card">
+                <div class="card">
+                    <div id="carouselClasseA" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="classea1.jpg" class="d-block w-100 car-img" alt="Classe A vista 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classea2.jpg" class="d-block w-100 car-img" alt="Classe A vista 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classea3.jpg" class="d-block w-100 car-img" alt="Classe A vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classea4.jpg" class="d-block w-100 car-img" alt="Classe A vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classea5.jpg" class="d-block w-100 car-img" alt="Classe A vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classea6.jpg" class="d-block w-100 car-img" alt="Classe A vista 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselClasseA" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Precedente</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselClasseA" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Successivo</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes Classe A</h5>
+                        <ul>
+                            <li>
+                                <strong>Anno:</strong> 2024
+                            </li>
+                            <li>
+                                <strong>Chilometri:</strong> 0 km
+                            </li>
+                            <li>
+                                <strong>Stato:</strong> Nuovo
+                            </li>
+                        </ul>
+                        <p>La Mercedes Classe A è una berlina compatta premium che unisce eleganza, tecnologia e sportività. Caratterizzata da un design moderno e linee dinamiche, offre interni raffinati con materiali di alta qualità e il sistema multimediale MBUX con intelligenza artificiale. Disponibile con motori efficienti benzina, diesel e ibridi plug-in, la Classe A garantisce una guida agile, confortevole e sicura, ideale sia per la città che per i viaggi più lunghi.</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="classea_2.jpg" class="d-block w-100 car-img" alt="Classe A vista 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="classea_3.jpg" class="d-block w-100 car-img" alt="Classe A vista 3">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselClasseA" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Precedente</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselClasseA" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Successivo</span>
-              </button>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Mercedes Classe A</h5>
-              <ul>
-                <li>
-                  <strong>Anno:</strong> 2021
-                </li>
-                <li>
-                  <strong>Chilometri:</strong> 0 km
-                </li>
-                <li>
-                  <strong>Stato:</strong> Nuovo
-                </li>
-              </ul>
-              <p>Compatta e lussuosa, con infotainment MBUX, motore turbo e finiture premium. Perfetta per la città e non solo.</p>
+            <!-- Auto 2: GLE -->
+            <div class="col-md-6 car-card">
+                <div class="card">
+                    <div id="carouselGLE" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="gle1.jpg" class="d-block w-100 car-img" alt="GLE vista 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="gle2.jpg" class="d-block w-100 car-img" alt="GLE vista 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="gle3.jpg" class="d-block w-100 car-img" alt="GLE vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="gle4.jpg" class="d-block w-100 car-img" alt="GLE vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="gle5.jpg" class="d-block w-100 car-img" alt="GLE vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="gle6.jpg" class="d-block w-100 car-img" alt="GLE vista 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGLE" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Precedente</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGLE" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Successivo</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes GLE</h5>
+                        <ul>
+                            <li>
+                                <strong>Anno:</strong> 2018
+                            </li>
+                            <li>
+                                <strong>Chilometri:</strong> 0 km
+                            </li>
+                            <li>
+                                <strong>Stato:</strong> Nuovo
+                            </li>
+                        </ul>
+                        <p>La Mercedes GLE del 2018 è un SUV di fascia alta che combina robustezza, lusso e tecnologia avanzata. Con dimensioni generose e una presenza scenica imponente, offre interni raffinati, spaziosi e ben rifiniti, con materiali di pregio e comfort elevato.</p>
+                    </div>
+                </div>
             </div>
-          </div>
+            <!-- Auto 3: CLA -->
+            <div class="col-md-6 car-card">
+                <div class="card">
+                    <div id="carouselCLA" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="cla1.jpg" class="d-block w-100 car-img" alt="CLA vista 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="cla2.jpg" class="d-block w-100 car-img" alt="CLA vista 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="cla3.jpg" class="d-block w-100 car-img" alt="CLA vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="cla4.jpg" class="d-block w-100 car-img" alt="CLA vista 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="cla5.jpg" class="d-block w-100 car-img" alt="CLA vista 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="cla6.jpg" class="d-block w-100 car-img" alt="CLA vista 6">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCLA" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Precedente</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCLA" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Successivo</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes CLA</h5>
+                        <ul>
+                            <li><strong>Anno:</strong> 2021</li>
+                            <li><strong>Chilometri:</strong> 0 km</li>
+                            <li><strong>Stato:</strong> Nuovo</li>
+                        </ul>
+                        <p>La Mercedes CLA 2021 è una coupé-berlina elegante che coniuga linee filanti e sportivezza con tecnologia moderna. Gli esterni appaiono raffinati, con tetto spiovente, profilo aerodinamico e dettagli stilistici AMG disponibili per chi cerca maggior carattere.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auto 4: Classe C -->
+            <div class="col-md-6 car-card">
+                <div class="card">
+                    <div id="carouselClasseC" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="classec1.jpg" class="d-block w-100 car-img" alt="Classe C vista 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classec2.jpg" class="d-block w-100 car-img" alt="Classe C vista 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classec3.jpg" class="d-block w-100 car-img" alt="Classe C vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classec4.jpg" class="d-block w-100 car-img" alt="Classe C vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classec5.jpg" class="d-block w-100 car-img" alt="Classe C vista 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="classec6.jpg" class="d-block w-100 car-img" alt="Classe C vista 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselClasseC" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Precedente</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselClasseC" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Successivo</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes Classe C Berlina</h5>
+                        <ul>
+                            <li>
+                                <strong>Anno:</strong> 2020
+                            </li>
+                            <li>
+                                <strong>Chilometri:</strong> 40.000 km
+                            </li>
+                            <li>
+                                <strong>Stato:</strong> Usato
+                            </li>
+                        </ul>
+                        <p>La Mercedes Classe C Berlina è una berlina media premium che unisce stile elegante, comfort di alto livello e tecnologia moderna. È perfetta per chi cerca un’auto raffinata ma con prestazioni solide, ideale sia per la città che per i viaggi lunghi.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Auto 2: GLE -->
-        <div class="col-md-6 car-card">
-          <div class="card">
-            <div id="carouselGLE" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="gle.jpg" class="d-block w-100 car-img" alt="GLE vista 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="gle_2.jpg" class="d-block w-100 car-img" alt="GLE vista 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="gle_3.jpg" class="d-block w-100 car-img" alt="GLE vista 3">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselGLE" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Precedente</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselGLE" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Successivo</span>
-              </button>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Mercedes GLE</h5>
-              <ul>
-                <li>
-                  <strong>Anno:</strong> 2023
-                </li>
-                <li>
-                  <strong>Chilometri:</strong> 0 km
-                </li>
-                <li>
-                  <strong>Stato:</strong> Nuovo
-                </li>
-              </ul>
-              <p>SUV di lusso con interni spaziosi, assistenza alla guida di livello avanzato e trazione 4MATIC per il massimo della sicurezza.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Auto 3: EQB -->
-        <div class="col-md-6 car-card">
-          <div class="card">
-            <div id="carouselEQB" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="eqb.jpg" class="d-block w-100 car-img" alt="EQB vista 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="eqb_2.jpg" class="d-block w-100 car-img" alt="EQB vista 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="eqb_3.jpg" class="d-block w-100 car-img" alt="EQB vista 3">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselEQB" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Precedente</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselEQB" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Successivo</span>
-              </button>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Mercedes EQB (Elettrica)</h5>
-              <ul>
-                <li>
-                  <strong>Anno:</strong> 2024
-                </li>
-                <li>
-                  <strong>Chilometri:</strong> 0 km
-                </li>
-                <li>
-                  <strong>Stato:</strong> Usato
-                </li>
-              </ul>
-              <p>SUV compatto elettrico con autonomia fino a 450 km, tecnologia MBUX e ampia capacità di carico. Zero emissioni, massimo comfort.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Auto 4: Classe C -->
-        <div class="col-md-6 car-card">
-          <div class="card">
-            <div id="carouselClasseC" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="classec.jpg" class="d-block w-100 car-img" alt="Classe C vista 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="classec_2.jpg" class="d-block w-100 car-img" alt="Classe C vista 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="classec_3.jpg" class="d-block w-100 car-img" alt="Classe C vista 3">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselClasseC" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Precedente</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselClasseC" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Successivo</span>
-              </button>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Mercedes Classe C Berlina</h5>
-              <ul>
-                <li>
-                  <strong>Anno:</strong> 2020
-                </li>
-                <li>
-                  <strong>Chilometri:</strong> 40.000 km
-                </li>
-                <li>
-                  <strong>Stato:</strong> Usato
-                </li>
-              </ul>
-              <p>Eleganza e prestazioni in un’unica soluzione. Motore diesel efficiente, sedili in pelle, cruise control e sensori a 360°.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
     <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2025 Billy's Car - Mercedes-Benz</p>
+        <p>&copy; 2025 Billy's Car - Mercedes-Benz</p>
     </footer>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
+
 </html>
