@@ -1,115 +1,113 @@
-/* Reset base */
-body, h1, h2, p, ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* Body */
+/* Stile generale del body */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9fafb;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
 /* Header */
 header {
-  background: linear-gradient(90deg, #0d6efd 0%, #6610f2 100%);
-  color: white;
-  padding: 1.5rem 2rem;
-  text-align: center;
-  box-shadow: 0 4px 8px rgb(13 110 253 / 0.3);
+    background-color: #0d6efd; /* blu principale */
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
 }
 
 header h1 {
-  font-weight: 700;
-  font-size: 2.8rem;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
-  margin-bottom: 2rem;
-  border-radius: 8px;
+    background-color: #ffffff; /* navbar chiara per leggibilità */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.nav-link {
-  font-weight: 600;
-  color: #0d6efd !important;
-  transition: color 0.3s ease;
+.navbar .navbar-brand {
+    color: #0d6efd !important; /* blu */
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.nav-link:hover, .nav-link.active {
-  color: #6610f2 !important;
-  text-decoration: underline;
+.navbar .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin-right: 1rem;
 }
 
-/* Sections */
+.navbar .nav-link.active {
+    border-bottom: 2px solid #0d6efd;
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Sezioni principali */
 section {
-  background: white;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.05);
-  transition: transform 0.3s ease;
+    background-color: #ffffff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgb(0 0 0 / 0.1);
+/* Titoli delle sezioni */
+section h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #0d6efd;
 }
 
-/* Headings */
-h2 {
-  color: #0d6efd;
-  margin-bottom: 1rem;
-  border-bottom: 3px solid #6610f2;
-  padding-bottom: 0.3rem;
+/* Paragrafi */
+section p {
+    line-height: 1.8;
 }
 
-/* Paragraphs */
-p {
-  font-size: 1.1rem;
-  color: #444;
+/* Immagini dei marchi */
+section img {
+    max-width: 150px;
+    margin: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 1.2rem 0;
-  background-color: #0d6efd;
-  color: white;
-  font-weight: 600;
-  border-radius: 0 0 12px 12px;
-  box-shadow: 0 -4px 10px rgb(13 110 253 / 0.3);
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #0d6efd;
+    color: white;
+    margin-top: 2rem;
+    font-weight: bold;
 }
 
-/* Images in marchi */
-#marchi img {
-  max-width: 150px;
-  margin: 0 15px 15px 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  border: 2px solid transparent;
-}
-
-#marchi img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgb(102 16 242 / 0.4);
-  border-color: #6610f2;
-}
-
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
+    section img {
+        max-width: 120px;
+        margin: 0.5rem;
+    }
 
-  #marchi img {
-    max-width: 100px;
-    margin-bottom: 10px;
-  }
+    .navbar .nav-link {
+        margin-right: 0.5rem;
+    }
 }

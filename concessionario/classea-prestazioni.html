@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Mercedes Classe A - Prestazioni e caratteristiche</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .car-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .specs-table th, .specs-table td {
+      vertical-align: middle;
+    }
+    .specs-table {
+      margin-top: 20px;
+    }
+    .btn-back {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-dark text-white text-center py-4">
+    <h1>Mercedes Classe A</h1>
+    <p>
+      <a href="mercedes.html" class="text-light">← Torna alla lista auto</a>
+    </p>
+  </header>
+
+  <main class="container py-5">
+    <!-- Carosello immagini -->
+    <div id="carouselClasseAPrestazioni" class="carousel slide mb-5">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="classea1.jpg" class="d-block w-100 car-img" alt="Classe A vista 1">
+        </div>
+        <div class="carousel-item">
+          <img src="classea2.jpg" class="d-block w-100 car-img" alt="Classe A vista 2">
+        </div>
+        <div class="carousel-item">
+          <img src="classea3.jpg" class="d-block w-100 car-img" alt="Classe A vista 3">
+        </div>
+        <div class="carousel-item">
+          <img src="classea4.jpg" class="d-block w-100 car-img" alt="Classe A vista 4">
+        </div>
+        <div class="carousel-item">
+          <img src="classea5.jpg" class="d-block w-100 car-img" alt="Classe A vista 5">
+        </div>
+        <div class="carousel-item">
+          <img src="classea6.jpg" class="d-block w-100 car-img" alt="Classe A vista 6">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselClasseAPrestazioni" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Precedente</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselClasseAPrestazioni" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Successivo</span>
+      </button>
+    </div>
+
+    <!-- Tabella prestazioni -->
+    <section>
+      <h2 class="mt-4">Prestazioni e caratteristiche principali</h2>
+      <table class="table table-striped specs-table">
+        <tbody>
+          <tr>
+            <th scope="row">Motore</th>
+            <td>Benzina / Diesel / Ibrido plug-in</td>
+          </tr>
+          <tr>
+            <th scope="row">Potenza</th>
+            <td>136 - 306 CV (a seconda della versione)</td>
+          </tr>
+          <tr>
+            <th scope="row">Coppia</th>
+            <td>200 - 400 Nm</td>
+          </tr>
+          <tr>
+            <th scope="row">0-100 km/h</th>
+            <td>4,8 - 8,0 secondi</td>
+          </tr>
+          <tr>
+            <th scope="row">Velocità massima</th>
+            <td>210 - 250 km/h</td>
+          </tr>
+          <tr>
+            <th scope="row">Trazione</th>
+            <td>Anteriore o Integrale 4MATIC</td>
+          </tr>
+          <tr>
+            <th scope="row">Consumo medio</th>
+            <td>4,8 - 7,5 l/100 km</td>
+          </tr>
+          <tr>
+            <th scope="row">CO₂</th>
+            <td>110 - 170 g/km</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Pulsante back -->
+    <p class="text-center btn-back">
+      <a href="mercedes.html" class="btn btn-secondary btn-lg">← Torna alla lista auto</a>
+    </p>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Billy's Car - Mercedes-Benz</p>
+  </footer>
+
+  <!-- Bootstrap JS per il carosello -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
