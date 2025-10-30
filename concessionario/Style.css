@@ -1,113 +1,105 @@
-/* Stile generale del body */
+/* --- Stile base della pagina --- */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+    font-family: Arial, sans-serif; /* Font leggibile */
+    line-height: 1.6; /* Spazio tra le righe */
+    margin: 0; /* Nessun margine esterno */
+    padding: 0; /* Nessun padding */
+    background: #f2f2f2; /* Sfondo grigio chiaro */
+    color: #333; /* Testo grigio scuro */
 }
 
-/* Header */
+/* --- Header --- */
 header {
-    background-color: #0d6efd; /* blu principale */
-    color: white;
-    padding: 1.5rem 0;
-    text-align: center;
+    background: black; /* Sfondo nero */
+    color: white; /* Testo bianco */
+    padding: 20px 0; /* Spazio sopra e sotto */
+    text-align: center; /* Testo centrato */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: bold;
+    margin: 0; /* Nessuno spazio intorno */
+    font-size: 2.5rem; /* Titolo grande */
+    font-weight: bold; /* Grassetto */
 }
 
-/* Navbar */
+/* --- Navbar --- */
 .navbar {
-    background-color: #ffffff; /* navbar chiara per leggibilità */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: white; /* Sfondo bianco */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombra leggera */
+    position: sticky; /* Resta in alto */
+    top: 0;
+    z-index: 1000; /* Sopra agli altri elementi */
 }
 
 .navbar .navbar-brand {
-    color: #0d6efd !important; /* blu */
+    color: #0d6efd; /* Logo blu */
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .navbar .nav-link {
-    color: #333 !important;
-    font-weight: 500;
-    margin-right: 1rem;
+    color: #333; /* Link grigio scuro */
+    margin-right: 10px; /* Spazio tra link */
 }
 
 .navbar .nav-link.active {
-    border-bottom: 2px solid #0d6efd;
+    border-bottom: 2px solid #0d6efd; /* Linea blu per link attivo */
 }
 
 .navbar .nav-link:hover {
-    color: #0d6efd !important;
+    color: #0d6efd; /* Cambia colore al passaggio del mouse */
 }
 
-/* Sticky Navbar */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* Sezioni principali */
+/* --- Sezioni --- */
 section {
-    background-color: #ffffff;
-    margin: 2rem auto;
-    padding: 2rem;
-    border-radius: 12px;
-    max-width: 1000px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    background: white; /* Sfondo bianco */
+    margin: 20px auto; /* Spazio sopra e sotto, centrato */
+    padding: 20px; /* Spazio dentro */
+    border-radius: 12px; /* Angoli arrotondati */
+    max-width: 1000px; /* Larghezza massima */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Ombra leggera */
 }
 
-/* Titoli delle sezioni */
 section h2 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    color: #0d6efd;
+    color: #0d6efd; /* Titolo blu */
+    margin: 0 0 10px 0; /* Spazio sotto il titolo */
 }
 
-/* Paragrafi */
 section p {
-    line-height: 1.8;
+    line-height: 1.8; /* Spazio tra le righe */
 }
 
-/* Immagini dei marchi */
+/* Immagini */
 section img {
     max-width: 150px;
-    margin: 1rem;
+    margin: 10px;
     border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: 0.3s; /* Effetto al passaggio del mouse */
 }
 
 section img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: scale(1.05); /* Ingrandisce leggermente */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Ombra */
 }
 
-/* Footer */
+/* --- Footer --- */
 footer {
     text-align: center;
-    padding: 1.5rem 0;
-    background-color: #0d6efd;
+    padding: 20px 0;
+    background: black;
     color: white;
-    margin-top: 2rem;
     font-weight: bold;
+    margin-top: 20px;
 }
 
-/* Responsive */
+/* --- Responsive --- */
 @media (max-width: 768px) {
     section img {
         max-width: 120px;
-        margin: 0.5rem;
+        margin: 5px;
     }
 
     .navbar .nav-link {
-        margin-right: 0.5rem;
+        margin-right: 5px;
     }
 }
